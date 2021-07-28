@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>1. Number of days </h1>
+
+<p>Problem: Given the number of the month, your task is to calculate the number of days present in the particular month. </p>
+
+
+<script>
+
+var day = parseInt(prompt("Enter a Number of the Month", "0"), 10); // Takes input from user.
+
+/* if use getMonth() function. This will give Real(current) Month Number from 0-11. */
+
+switch (day) 
+{
+  case 1:
+    day = "January has = 31 Days";
+    break;
+  case 2:
+    day = "Febuary has = 28 Days";
+    break;
+  case 3:
+     day = "March has = 31 Days";
+    break;
+  case 4:
+    day = "April has = 30 Days";
+    break;
+  case 5:
+    day = "May has = 31 Days";
+    break;
+  case 6:
+    day = "June has = 30 Days";
+    break;
+  case 7:
+    day = "July has = 31 Days";
+    break;
+  case 8:
+    day = "August has = 31 Days";
+    break;
+    case 9:
+    day = "September has = 30 Days";
+    break;
+    case 10:
+    day = "October has = 31 Days";
+    break;
+    case 11:
+    day = "November has = 30 Days";
+    break;
+    case 12:
+    day = "Desember has = 31 Days";
+    break;
+  default:
+   day = " Enter valid No. of the month.";
+   
+ }
+
+document.write(day); //console.log(day);
+</script>
+
+</body>
+</html>
