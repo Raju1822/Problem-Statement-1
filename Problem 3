@@ -1,0 +1,37 @@
+## C++ Solution
+
+
+int main()
+{
+    int N;
+    
+    cout<<"Enter size of Matrix : "<<endl;
+    
+    cin>>N;
+    
+    //Matrix is N*N 
+    
+    int matrix[N][N];
+    cout<<"Enter "<<N*N<<" element of the Matrix :"<<endl;
+    
+    // Please enter values
+    for(int i=0;i<N;i++)
+    {
+        for(int j=0;j<N;j++)
+        {
+            cin>>matrix[i][j];
+        }
+    }
+    
+    cout<<"Sum of Primary and Secondary Diagonal elements = ";
+    
+    int sum =0;
+    
+    for(int i=0;i<N;i++)
+    {
+        //Primary diagonal Matrix[i][i], Secondary diagonal Matrix[i][N-1-i];
+        
+        sum = sum + matrix[i][i] + matrix[i][N-1-i];
+    }
+    cout<<sum<<endl;
+}
