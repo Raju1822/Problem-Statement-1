@@ -1,0 +1,20 @@
+## C++ Solution 
+
+
+int printEven(int n, int x)
+{
+    if(n>x)     // base condition
+        return 0;
+    if(n%2==0)
+        cout<<n<<" "; // if even print value
+
+   return printEven(n+1, x);  // recursive call
+}
+int main()
+{
+    int x;
+    cout<<"Enter x : "<<endl;
+    cin>>x;
+    cout<<"The even no. from 0 to "<<x<<" is = ";
+    printEven(0, x); // function 
+}
